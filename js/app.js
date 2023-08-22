@@ -7,7 +7,6 @@ d.addEventListener("DOMContentLoaded", e =>{
 
     showPokemons(uri);
 
-
 })
 
 const showPokemons = async (uri) => {
@@ -37,8 +36,10 @@ const showPokemons = async (uri) => {
       let card= d.createElement("div");
       card.classList.add("card-content")
 
+     
+
      card.innerHTML= 
-      `<div class="poke-card">
+      `<div class="poke-card ${pokemon.types[0].type.name}">
          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${pokemon.id}.svg" alt="${pokemon.name}" class="poke-img">
          <p>#${pokemon.id}</p>
          <p class="poke-name">${pokemon.name}</p>
@@ -49,11 +50,8 @@ const showPokemons = async (uri) => {
 
     
 }
- 
 
 $container.replaceChildren(fragment);
-
-
 
 }
 
