@@ -42,13 +42,18 @@ nav{
     
 }
 
+.pokedex-title{
+
+    margin: 4rem;
+}
+
 .container-pokemons{
     /* background-color: brown; */
     display: grid;
     place-items: center;
     gap: 5rem;
     margin: 2.4rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     min-height: 100vh;
     
 }
