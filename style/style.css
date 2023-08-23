@@ -39,7 +39,20 @@ nav{
     font-size: 1.5rem;
     padding: .3rem;
     background-color: rgb(8, 8, 22);
+    width: min-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    margin: auto;
     
+    
+    
+}
+
+.prev, .next{
+
+    text-decoration: none;
 }
 
 .pokedex-title{
