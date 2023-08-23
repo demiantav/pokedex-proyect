@@ -63,12 +63,12 @@ d.addEventListener("click", e => {
     e.preventDefault();
 
     if(e.target.matches(".next")){
-
+        window.scrollTo(top);
         showPokemons(e.target.href);
     }
 
     if(e.target.matches(".prev")){
-
+        window.scrollTo(top);
         showPokemons(e.target.href);
     }
 })
